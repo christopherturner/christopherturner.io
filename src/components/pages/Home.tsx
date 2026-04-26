@@ -3,7 +3,7 @@ import ThemeToggle from "../ui/ThemeToggle";
 import { useColorModeValue } from "../ui/color-mode";
 
 const Home = () => {
-    const textColor = useColorModeValue("gray.500", "cyan.400");
+    const textColor = useColorModeValue("green.600", "cyan.400");
 
     return (
     <>

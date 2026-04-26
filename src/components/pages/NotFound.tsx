@@ -4,8 +4,8 @@ import ThemeToggle from "../ui/ThemeToggle";
 import { useColorModeValue } from "../ui/color-mode";
 
 const NotFound = () => {
-    const linkColor = useColorModeValue("gray.500", "cyan.400");
-    const hoverColor = useColorModeValue("gray.900", "cyan.300");
+    const linkColor = useColorModeValue("green.600", "cyan.400");
+    const hoverColor = useColorModeValue("green.500", "cyan.300");
 
     return (
     <>
