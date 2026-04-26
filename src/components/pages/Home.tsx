@@ -26,7 +26,7 @@ const Home = () => {
                     <Text fontSize="lg" color={"green.600"}>
                         My name is Christopher.
                         <br />
-                        I'm a software engineer.
+                        I'm a <a href="https://en.wikipedia.org/wiki/Software_engineering" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "underline" }}>software engineer</a>.
                     </Text>
                     <br />
                     <Stack direction="row" fontSize="lg" color={"green.600"}>
