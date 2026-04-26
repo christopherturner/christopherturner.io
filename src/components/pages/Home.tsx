@@ -9,13 +9,13 @@ const Home = () => {
     <>
     <AbsoluteCenter>
         <Stack gap={2} align="center" justify="center">
-            <Heading size="6xl">
+            <Heading size="6xl" textAlign="center">
                 Hello
             </Heading>
             <Text fontSize="lg" color={textColor}>
-                Nice to meet you. My name is Christopher.
+                My name is Christopher.
                 <br />
-                I'm a software engineer & tinkerer.
+                I'm a software engineer.
             </Text>
             <br />
             {/* <SocialLinks /> */}
