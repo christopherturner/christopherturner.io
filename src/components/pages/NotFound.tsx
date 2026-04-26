@@ -1,15 +1,15 @@
 import { AbsoluteCenter, Heading, Stack } from "@chakra-ui/react";
 
-const Home = () => (
+const NotFound = () => (
     <>
     <AbsoluteCenter>
-        <Stack align="center" justify="center">
+        <Stack textAlign="center" gap={4}>
             <Heading size="6xl">
-                Hello
+                404
             </Heading>
         </Stack>
     </AbsoluteCenter>
     </>
 );
 
-export default Home;
+export default NotFound;
