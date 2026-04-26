@@ -1,12 +1,8 @@
 import { AbsoluteCenter, Heading, HStack, Link, Stack } from "@chakra-ui/react";
 import { FaArrowLeft } from "react-icons/fa";
 import ThemeToggle from "../ui/ThemeToggle";
-import { useColorModeValue } from "../ui/color-mode";
 
 const NotFound = () => {
-    const linkColor = useColorModeValue("green.600", "cyan.400");
-    const hoverColor = useColorModeValue("green.500", "cyan.300");
-
     return (
     <>
     <AbsoluteCenter>
@@ -17,8 +13,8 @@ const NotFound = () => {
             <Link
                 href="/"
                 textDecoration="none"
-                color={linkColor}
-                _hover={{ color: hoverColor }}
+                color={"green.600"}
+                _hover={{ color: "green.500" }}
                 transition="color 0.2s"
             >
                 <HStack gap={2} justify="center">
