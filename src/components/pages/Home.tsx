@@ -1,5 +1,5 @@
-import { AbsoluteCenter, Heading, Stack, Text } from "@chakra-ui/react";
-import { FaPython, FaReact } from "react-icons/fa6";
+import { AbsoluteCenter, Heading, Stack, Text, Box } from "@chakra-ui/react";
+import { FaPython, FaReact, FaEnvelope } from "react-icons/fa6";
 import { SiCplusplus } from "react-icons/si";
 import ThemeToggle from "../ui/ThemeToggle";
 import { RiCodeFill, RiCodeSSlashFill } from "react-icons/ri";
@@ -7,17 +7,6 @@ import { RiCodeFill, RiCodeSSlashFill } from "react-icons/ri";
 const Home = () => {
     return (
         <>
-            {/* <style>
-                {`
-                    @keyframes colorCycle {
-                        0%, 100% { color: #16a34a; }
-                        50% { color: #22d3ee; }
-                    }
-                    .animate-icon {
-                        animation: colorCycle 3s ease-in-out infinite;
-                    }
-                `}
-            </style> */}
             <AbsoluteCenter>
                 <Stack gap={2} align="center" justify="center">
                     <Heading size="6xl" textAlign="center">
@@ -35,7 +24,6 @@ const Home = () => {
                             href="https://isocpp.org/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            // className="animate-icon"
                         >
                             <SiCplusplus />
                         </a>
@@ -43,8 +31,6 @@ const Home = () => {
                             href="https://www.python.org/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            // className="animate-icon"
-                            // style={{ animationDelay: "1s" }}
                         >
                             <FaPython />
                         </a>
@@ -52,16 +38,33 @@ const Home = () => {
                             href="https://react.dev/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            // className="animate-icon"
-                            // style={{ animationDelay: "2s" }}
                         >
                             <FaReact />
                         </a>
                         <RiCodeSSlashFill />
                     </Stack>
-                    {/* <SocialLinks /> */}
                 </Stack>
             </AbsoluteCenter>
+
+            <Box position="fixed" bottom={4} left={4} zIndex={1000}>
+                <a
+                    href="/contact"
+                    style={{
+                        color: "#16a34a",
+                        fontSize: "22px",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        padding: "8px",
+                        borderRadius: "8px",
+                        transition: "transform 0.2s ease, color 0.2s ease",
+                    }}
+                    aria-label="Contact Me"
+                >
+                    <FaEnvelope />
+                </a>
+            </Box>
+
             <ThemeToggle />
         </>
     );
